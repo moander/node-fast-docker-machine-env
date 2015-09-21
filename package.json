@@ -1,0 +1,29 @@
+{
+  "name": "fast-docker-machine-env",
+  "version": "0.1.0",
+  "description": "Simple 'docker-machine env dev' wrapper",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "fast-docker-machine-env": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moander/node-fast-docker-machine-env.git"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "Morten Andersen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moander/node-fast-docker-machine-env/issues"
+  },
+  "homepage": "https://github.com/moander/node-fast-docker-machine-env#readme",
+  "engines": {
+    "node": ">=4.1.0"
+  }
+}
