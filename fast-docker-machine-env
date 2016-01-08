@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+docker-machine inspect ${1-dev} -f "export DOCKER_HOST='tcp://{{.Driver.IPAddress}}:2376' DOCKER_CERT_PATH='{{.Driver.StorePath}}/machines/{{.Driver.MachineName}}' DOCKER_MACHINE_NAME='{{.Driver.MachineName}}' DOCKER_TLS_VERIFY=1"
+echo "# Run this command to configure your shell:"
+echo "# eval \$($0 ${1-dev})"
